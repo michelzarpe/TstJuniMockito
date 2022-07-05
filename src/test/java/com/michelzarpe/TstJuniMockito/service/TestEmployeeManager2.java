@@ -1,5 +1,8 @@
-package com.michelzarpe.TstJuniMockito;
+package com.michelzarpe.TstJuniMockito.service;
 
+import com.michelzarpe.TstJuniMockito.EmployeeDao;
+import com.michelzarpe.TstJuniMockito.EmployeeManager;
+import com.michelzarpe.TstJuniMockito.EmployeeVO;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.BeforeAll;
@@ -18,7 +21,7 @@ import static org.mockito.Mockito.when;
 
 @SpringBootTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class TstJuniMockitoApplicationTests {
+class TestEmployeeManager2 {
 
     @InjectMocks
     EmployeeManager manager;
