@@ -7,8 +7,13 @@ import java.util.List;
 
 @Service
 public class EmployeeManager {
+
     @Autowired
     EmployeeDao dao;
+
+    public EmployeeManager(EmployeeDao dao){
+        this.dao = dao;
+    }
 
     public List<EmployeeVO> getEmployeeList() {
         return dao.getEmployeeList();
